@@ -14,10 +14,12 @@ public class Main {
 
     Student s1 = new Student("X","123","4",tarih,fizik,biyo);
     s1.addBulkExamNote(100,70,50);
+    s1.addBulkQuizNote(30,50,60);
   s1.isPass();
 
   Student s2 = new Student("Y","234","4",tarih,fizik,biyo);
   s2.addBulkExamNote(20,80,88);
+  s2.addBulkQuizNote(48,45,84);
   s2.isPass();
 
 

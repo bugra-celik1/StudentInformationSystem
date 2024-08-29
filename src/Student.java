@@ -31,6 +31,17 @@ public class Student {
             this.c3.note = note3;
         }
     }
+    void addBulkQuizNote(int quiz1,int quiz2,int quiz3){
+        if(quiz1 >= 0 && quiz1 <=100){
+            this.c1.quiz = quiz1;
+        }
+        if(quiz2 >= 0 && quiz2 <=100){
+            this.c2.quiz = quiz2;
+        }
+        if(quiz3 >= 0 && quiz3 <=100){
+            this.c3.quiz = quiz3;
+        }
+    }
     void calcAvarage(){
        this.avarage1= (this.c1.note * 0.8 ) + (this.c1.quiz * 0.2);
        this.avarage2 =(this.c2.note * 0.8 ) + (this.c2.quiz * 0.2);
@@ -56,6 +67,9 @@ public class Student {
         System.out.println(this.c1.name +"Notu\t:" +this.c1.note);
         System.out.println(this.c2.name +"Notu\t:" +this.c2.note);
         System.out.println(this.c3.name +"Notu\t:" +this.c3.note);
+        System.out.println(this.c1.name +"Sözlü Notu\t:" +this.c1.quiz);
+        System.out.println(this.c2.name +"Sözlü Notu\t:" +this.c2.quiz);
+        System.out.println(this.c3.name +"Sözlü Notu\t:" +this.c3.quiz);
         System.out.println("Ortalamanız \t:" +this.totalAvarage);
     }
 
